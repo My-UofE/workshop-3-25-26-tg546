@@ -27,9 +27,11 @@ public class SumSquares {
         
         int total = 0;
 
-        for (int i = startNum; i <= endNum; ++i) {
-                total += i*i;
+        while (startNum <= endNum){
+            total += startNum*startNum;
+            startNum++;
         }
+
 
         System.out.println(total);
 
