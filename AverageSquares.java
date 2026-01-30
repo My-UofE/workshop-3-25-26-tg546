@@ -28,10 +28,10 @@ public class AverageSquares {
         int total = 0;
 
         double countNum = endNum - startNum+1;
-        while (startNum <= endNum){
+        do {
             total += startNum*startNum;
             startNum++;
-        }
+        } while (startNum <= endNum);
 
 
         System.out.println(total/countNum);
